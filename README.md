@@ -166,26 +166,26 @@ The application generates seven comprehensive visualizations:
 
 ```
 anemia-prediction-app/
-├── app.py                 # Flask application
+├── app.py                # Flask application
 ├── model.py              # ML model training and visualization
-├── model_file.pkl             # Trained model (generated)
+├── model_file.pkl        # Trained model (generated)
 ├── requirements.txt      # Python dependencies
-├── README.md            # Project documentation
-├── .gitignore           # Git ignore rules
+├── README.md             # Project documentation
+├── .gitignore            # Git ignore rules
 ├── forms/
-│   └── anemia.csv       # Dataset
+│   └── anemia.csv        # Dataset
 ├── templates/
-│   ├── index.html       # Home page
-│   └── predict.html     # Results page
-|   └── error.html     # Error page
+│   ├── index.html        # Home page
+│   └── predict.html      # Results page
+|   └── error.html        # Error page
 └── static/
-    ├── Figure_1.png     # Dataset distribution (original)
-    ├── Figure_2.png     # Dataset distribution (balanced)
-    ├── Figure_3.png     # Gender distribution
-    ├── Figure_4.png     # Hemoglobin distribution
-    ├── Figure_5.png     # Hemoglobin by gender/status
-    ├── Figure_6.png     # Feature relationships
-    └── Figure_7.png     # Correlation heatmap
+    ├── Figure_1.png      # Dataset distribution (original)
+    ├── Figure_2.png      # Dataset distribution (balanced)
+    ├── Figure_3.png      # Gender distribution
+    ├── Figure_4.png      # Hemoglobin distribution
+    ├── Figure_5.png      # Hemoglobin by gender/status
+    ├── Figure_6.png      # Feature relationships
+    └── Figure_7.png      # Correlation heatmap
 ```
 
 ## 🎯 Key Learning Outcomes
