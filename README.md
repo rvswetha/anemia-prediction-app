@@ -9,7 +9,7 @@ A machine learning-powered web application that predicts anemia in patients base
 
 
 
-## 📋 Table of Contents
+## Table of Contents
 - [Overview](#overview)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
@@ -22,7 +22,7 @@ A machine learning-powered web application that predicts anemia in patients base
 - [Contributing](#contributing)
 - [License](#license)
 
-## 🔍 Overview
+## Overview
 
 This web application uses machine learning algorithms to predict whether a patient has anemia based on key blood parameters. The system provides an intuitive web interface for healthcare professionals and includes comprehensive data visualizations to understand the underlying patterns in the data.
 
@@ -33,16 +33,16 @@ This web application uses machine learning algorithms to predict whether a patie
 - **MCHC** (Mean Corpuscular Hemoglobin Concentration)
 - **MCV** (Mean Corpuscular Volume)
 
-## ✨ Features
+## Features
 
-- 🎯 **Accurate Predictions**: Multiple ML algorithms with high accuracy
-- 🎨 **Modern UI**: Clean, responsive web interface
-- 📊 **Data Visualizations**: Comprehensive graphs and charts
-- ⚖️ **Balanced Dataset**: Proper data preprocessing and balancing
-- 📱 **Responsive Design**: Works on desktop and mobile devices
-- 🔄 **Real-time Predictions**: Instant results upon form submission
+- **Accurate Predictions**: Multiple ML algorithms with high accuracy
+- **Modern UI**: Clean, responsive web interface
+- **Data Visualizations**: Comprehensive graphs and charts
+- **Balanced Dataset**: Proper data preprocessing and balancing
+- **Responsive Design**: Works on desktop and mobile devices
+- **Real-time Predictions**: Instant results upon form submission
 
-## 🛠 Technologies Used
+## Technologies Used
 
 ### Backend
 - **Python 3.8+**
@@ -68,7 +68,7 @@ This web application uses machine learning algorithms to predict whether a patie
 - Support Vector Machine
 - Gaussian Naive Bayes
 
-## 🚀 Installation
+## Installation
 
 ### Prerequisites
 - Python 3.8 or higher
@@ -114,7 +114,7 @@ This web application uses machine learning algorithms to predict whether a patie
 7. **Access the application**
    Open your browser and navigate to `http://127.0.0.1:5000`
 
-## 📖 Usage
+## Usage
 
 1. **Home Page**: Enter patient blood parameters in the form
 2. **Prediction**: Click "Predict" to get anemia prediction
@@ -130,7 +130,7 @@ MCHC: 28.9
 MCV: 78.2
 ```
 
-## 🤖 Machine Learning Models
+## Machine Learning Models
 
 The application compares multiple classification algorithms:
 
@@ -150,7 +150,7 @@ The application compares multiple classification algorithms:
 4. **Evaluation**: Comparing accuracy and performance metrics
 5. **Selection**: Choosing Gradient Boosting for best results
 
-## 📊 Data Visualization
+## Data Visualization
 
 The application generates seven comprehensive visualizations:
 
@@ -162,7 +162,7 @@ The application generates seven comprehensive visualizations:
 6. **Feature Relationships** - Pairplot correlation
 7. **Correlation Heatmap** - Feature correlation matrix
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 anemia-prediction-app/
@@ -188,7 +188,7 @@ anemia-prediction-app/
     └── Figure_7.png      # Correlation heatmap
 ```
 
-## 🎯 Key Learning Outcomes
+## Key Learning Outcomes
 
 - **Full-Stack Development**: Frontend and backend integration
 - **Machine Learning Pipeline**: Data preprocessing to model deployment
@@ -196,7 +196,7 @@ anemia-prediction-app/
 - **Web Development**: Responsive design and user experience
 - **Version Control**: Git workflow and documentation
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
@@ -204,22 +204,22 @@ anemia-prediction-app/
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👨‍💻 Author
+## Author
 
 **Your Name**
 - GitHub: [@rvswetha](https://github.com/rvswetha)
 - LinkedIn: [RV Swetha](https://www.linkedin.com/in/swetha-rv-18992728a/)
 - Email: swetha.rv2023@vitstudent.ac.in
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Inspiration from healthcare ML applications
 - Flask documentation and community
 
 ---
 
-⭐ **Star this repository if you found it helpful!**
+⭐ **Star this repository if you found it helpful!** ⭐
