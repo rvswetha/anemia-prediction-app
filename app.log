@@ -1,0 +1,35 @@
+2025-09-05 14:24:25,738 - ERROR - Model file 'model.pkl' not found. Please run model.py first.
+2025-09-05 14:25:18,244 - ERROR - Model file 'model.pkl' not found. Please run model.py first.
+2025-09-05 14:25:18,483 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-05 14:25:18,503 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-05 14:25:39,321 - INFO - 127.0.0.1 - - [05/Sep/2025 14:25:39] "GET / HTTP/1.1" 200 -
+2025-09-05 14:25:49,724 - ERROR - Prediction attempted but model is not loaded
+2025-09-05 14:25:49,755 - INFO - 127.0.0.1 - - [05/Sep/2025 14:25:49] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-09-05 14:26:07,601 - ERROR - Model file 'model.pkl' not found. Please run model.py first.
+2025-09-05 14:26:07,628 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-05 14:26:07,628 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-05 14:26:14,265 - ERROR - Prediction attempted but model is not loaded
+2025-09-05 14:26:14,287 - INFO - 127.0.0.1 - - [05/Sep/2025 14:26:14] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-09-05 14:28:20,209 - INFO - Model loaded successfully
+2025-09-05 14:28:20,227 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-05 14:28:20,228 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-05 14:28:32,447 - INFO - 127.0.0.1 - - [05/Sep/2025 14:28:32] "GET / HTTP/1.1" 200 -
+2025-09-05 14:31:14,680 - INFO - Prediction request: Gender=1.0, Hemoglobin=8.5, MCH=22.1, MCHC=28.9, MCV=78.2
+2025-09-05 14:31:14,735 - INFO - Prediction made: 1
+2025-09-05 14:31:14,750 - INFO - Successful prediction: You have anemic disease with 100.0% confidence
+2025-09-05 14:31:14,920 - INFO - 127.0.0.1 - - [05/Sep/2025 14:31:14] "POST /predict HTTP/1.1" 200 -
+2025-09-05 14:31:15,269 - INFO - 127.0.0.1 - - [05/Sep/2025 14:31:15] "GET /static/Figure_1.png HTTP/1.1" 200 -
+2025-09-05 14:31:15,410 - INFO - 127.0.0.1 - - [05/Sep/2025 14:31:15] "GET /static/Figure_7.png HTTP/1.1" 200 -
+2025-09-05 14:31:15,885 - INFO - 127.0.0.1 - - [05/Sep/2025 14:31:15] "GET /static/Figure_6.png HTTP/1.1" 200 -
+2025-09-05 14:31:15,921 - INFO - 127.0.0.1 - - [05/Sep/2025 14:31:15] "GET /static/Figure_3.png HTTP/1.1" 200 -
+2025-09-05 14:31:15,922 - INFO - 127.0.0.1 - - [05/Sep/2025 14:31:15] "GET /static/Figure_2.png HTTP/1.1" 200 -
+2025-09-05 14:31:15,980 - INFO - 127.0.0.1 - - [05/Sep/2025 14:31:15] "GET /static/Figure_5.png HTTP/1.1" 200 -
+2025-09-05 14:31:16,078 - INFO - 127.0.0.1 - - [05/Sep/2025 14:31:16] "GET /static/Figure_4.png HTTP/1.1" 200 -
+2025-09-05 14:32:11,518 - INFO - 127.0.0.1 - - [05/Sep/2025 14:32:11] "GET / HTTP/1.1" 200 -
+2025-09-05 14:32:40,811 - INFO - Prediction request: Gender=1.0, Hemoglobin=100.0, MCH=22.1, MCHC=34.1, MCV=88.3
+2025-09-05 14:32:40,815 - WARNING - Input validation failed: Hemoglobin must be between 5.0 and 25.0 g/dL
+2025-09-05 14:32:40,820 - INFO - 127.0.0.1 - - [05/Sep/2025 14:32:40] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+2025-09-05 14:32:59,294 - INFO - 127.0.0.1 - - [05/Sep/2025 14:32:59] "GET / HTTP/1.1" 200 -

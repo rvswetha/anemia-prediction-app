@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anemia Prediction Result</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #6dd5ed, #2193b0);
+            margin: 0;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        
+        .result-container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 600px;
+            margin: 0 auto 40px auto;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+        
+        .graphs-container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1.2s ease-in-out;
+        }
+        
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        
+        .result-text {
+            font-size: 20px;
+            color: #444;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            font-weight: 600;
+        }
+        
+        .result-positive {
+            background-color: #ffe6e6;
+            border-left: 5px solid #dc3545;
+            color: #721c24;
+        }
+        
+        .result-negative {
+            background-color: #e6f7e6;
+            border-left: 5px solid #28a745;
+            color: #155724;
+        }
+        
+        .back-button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 24px;
+            background: #2193b0;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        
+        .back-button:hover {
+            background: #176a80;
+            transform: translateY(-2px);
+        }
+        
+        .graphs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .graph-item {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f8f9fa;
+            transition: transform 0.3s ease;
+        }
+        
+        .graph-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .graph-item h3 {
+            color: #2193b0;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        
+        .graph-item p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+        
+        .graph-item img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(-20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+        
+        .section-title {
+            text-align: center;
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <h2>🩸 Prediction Result</h2>
+        
+        {% if "don't have" in prediction_text %}
+        <div class="result-text result-negative">
+            {{ prediction_text }}
+        </div>
+        {% else %}
+        <div class="result-text result-positive">
+            {{ prediction_text }}
+        </div>
+        {% endif %}
+        
+        <a href="/" class="back-button">🏠 Back to Prediction Form</a>
+    </div>
+
+    <div class="graphs-container">
+        <h2 class="section-title">📊 Data Analysis & Insights</h2>
+        <p class="section-subtitle">Understanding the data behind anemia prediction</p>
+        
+        <div class="graphs-grid">
+            <div class="graph-item">
+                <h3>Dataset Balance - Original</h3>
+                <p>Shows the distribution of anemic vs non-anemic cases in the original dataset before balancing.</p>
+                <img src="{{ url_for('static', filename='Figure_1.png') }}" alt="Original Dataset Distribution">
+            </div>
+            
+            <div class="graph-item">
+                <h3>Dataset Balance - After Balancing</h3>
+                <p>Shows the balanced distribution after undersampling to ensure equal representation of both classes.</p>
+                <img src="{{ url_for('static', filename='Figure_2.png') }}" alt="Balanced Dataset Distribution">
+            </div>
+            
+            <div class="graph-item">
+                <h3>Gender Distribution</h3>
+                <p>Distribution of male and female participants in the dataset used for training the model.</p>
+                <img src="{{ url_for('static', filename='Figure_3.png') }}" alt="Gender Distribution">
+            </div>
+            
+            <div class="graph-item">
+                <h3>Hemoglobin Levels Distribution</h3>
+                <p>Histogram showing the distribution of hemoglobin levels across all patients in the dataset.</p>
+                <img src="{{ url_for('static', filename='Figure_4.png') }}" alt="Hemoglobin Distribution">
+            </div>
+            
+            <div class="graph-item">
+                <h3>Hemoglobin by Gender & Anemia Status</h3>
+                <p>Mean hemoglobin levels compared between genders and anemia status to show key patterns.</p>
+                <img src="{{ url_for('static', filename='Figure_5.png') }}" alt="Hemoglobin by Gender and Result">
+            </div>
+            
+            <div class="graph-item">
+                <h3>Feature Relationships</h3>
+                <p>Pair plot showing relationships between all blood parameters used in the prediction model.</p>
+                <img src="{{ url_for('static', filename='Figure_6.png') }}" alt="Feature Relationships Pairplot">
+            </div>
+            
+            <div class="graph-item">
+                <h3>Feature Correlation Heatmap</h3>
+                <p>Correlation matrix showing how strongly different blood parameters are related to each other.</p>
+                <img src="{{ url_for('static', filename='Figure_7.png') }}" alt="Correlation Heatmap">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
